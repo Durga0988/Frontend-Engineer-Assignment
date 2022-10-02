@@ -8,7 +8,7 @@ It returns the List using map method and different colors for selected and non-s
 
 2.What problems / warnings are there with code?
 
-1)array should be arrayOf as we are defining type of array elements as well. shapeOf should be shape(syntax error).
+1)Syntactical error while defining WrappedListComponent.propTypes  It would be arrayOf instead of shapeOf.
 2)The return value of useState should be destructured like this: [selectedIndex, setSelectedIndex] = useState()
 3)The isSelected prop expects a boolean value. I was able to catch this semantic error through propTypes defined for the SingleListItem component. Here is one possible solution: isSelected={selectedIndex === index}
 
